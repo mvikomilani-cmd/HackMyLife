@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/game_bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/scoreTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FINAL SCORE"
+        android:textColor="@color/game_yellow"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-black" />
+
+    <TextView
+        android:id="@+id/scoreText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="0 / 0"
+        android:textColor="@color/white"
+        android:textSize="48sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/feedbackText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Feedback"
+        android:textColor="@color/game_yellow"
+        android:textSize="24sp"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/reviewButton"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="48dp"
+        android:backgroundTint="@color/game_pink"
+        android:text="REVIEW ANSWERS"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+</LinearLayout>

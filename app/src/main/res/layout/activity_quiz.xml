@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/game_bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <TextView
+            android:id="@+id/questionText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="24dp"
+            android:gravity="center"
+            android:text="Question"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-medium" />
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/hackButton"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/game_green"
+        android:text="HACK (TRUE)"
+        android:textStyle="bold"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/mythButton"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/game_orange"
+        android:text="MYTH (FALSE)"
+        android:textStyle="bold"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/feedbackText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="@color/game_yellow"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/game_pink"
+        android:text="NEXT QUESTION"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp" />
+
+</LinearLayout>
