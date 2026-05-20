@@ -1,25 +1,22 @@
-[README (26).md](https://github.com/user-attachments/files/28072708/README.26.md)
-HackMyLife
+# HackMyLife – IMAD5112 Assignment 2
 
-HackMyLife – IMAD5112 Assignment 2
+**Student Number:** ST10470564  
+**Module:** IMAD5112 – Introduction to Mobile Application Development  
+**Institution:** The Independent Institute of Education (IIE)
 
-Student Number: ST10470564  
-Module: IMAD5112 – Introduction to Mobile Application Development  
-Institution:The Independent Institute of Education (IIE)
+---
 
+## Project Overview
 
+HackMyLife is an Android quiz application built using Kotlin and Android Studio (JetBrains, 2024). The app presents users with a series of life-hack statements and challenges them to identify whether each statement is a genuine life hack or a myth. Upon completing the quiz, users receive a score and can review their answers.
 
-Project Overview
+---
 
-HackMyLife is an Android quiz application built using Kotlin and Android Studio. The app presents users with a series of life-hack statements and challenges them to identify whether each statement is a genuine life hack or a myth. Upon completing the quiz, users receive a score and can review their answers.
+## App Structure
 
+Each screen in the application is implemented as an `Activity`, which serves as the entry point for user interaction in Android (Android Developers, 2024a). The application consists of four core activities:
 
-
- App Structure
-
-The application consists of four core activities:
-
-- **MainActivity** – Entry point of the app; displays a start button that launches the quiz.
+- **MainActivity** – Entry point of the app; displays a start button that launches the quiz. It extends `AppCompatActivity` to ensure backwards-compatible UI behaviour (Android Developers, 2024b).
 - **QuizActivity** – Presents questions one at a time; captures user responses (Hack or Myth) and tracks score.
 - **ScoreActivity** – Displays the final score and feedback message; provides navigation to the review screen.
 - **ReviewActivity** – Displays a breakdown of each question, the user's answer, the correct answer, and the result.
@@ -27,6 +24,8 @@ The application consists of four core activities:
 ---
 
 ## Technologies & Dependencies Used
+
+The following libraries and dependencies were used in this project (Google, 2024):
 
 | Dependency | Purpose |
 |---|---|
@@ -43,11 +42,14 @@ The application consists of four core activities:
 
 ## Key Concepts Applied
 
-- **Intents** – Used to navigate between activities and pass data (score, questions, answers) via `putExtra()` and `getStringArrayListExtra()`.
-- **Data Classes** – The `Question` data class in `QuizActivity` encapsulates question text and its boolean answer.
+- **Intents** – Used to navigate between activities and pass data (score, questions, answers) via `putExtra()` and `getStringArrayListExtra()`. Intents are the primary mechanism for communication between Android application components (Android Developers, 2024e).
+- **Data Classes** – The `Question` data class in `QuizActivity` encapsulates question text and its boolean answer. Kotlin data classes are designed specifically to hold data, with the compiler automatically generating utility functions (JetBrains, 2024a).
 - **State Management** – `currentIndex`, `score`, and `userAnswers` are maintained throughout the quiz session.
 - **UI Interaction** – Button click listeners (`setOnClickListener`) handle all user interaction, with buttons enabled/disabled to guide the user flow.
-- **Edge-to-Edge Display** – `enableEdgeToEdge()` is applied in `MainActivity` for a full-screen modern UI experience.
+- **Edge-to-Edge Display** – `enableEdgeToEdge()` is applied in `MainActivity` for a full-screen modern UI experience, consistent with Android's recommended windowing behaviour (Android Developers, 2024g).
+- **ConstraintLayout** – Used for flexible, responsive UI layouts, allowing views to be positioned relative to one another and to the parent container (Android Developers, 2024c).
+- **Material Design** – UI components follow Material Design guidelines to ensure a consistent and accessible visual experience (Android Developers, 2024f).
+- **Testing** – Unit tests are implemented using JUnit 4 (JUnit, 2024), and UI tests are supported via the Espresso testing framework (Android Developers, 2024d).
 
 ---
 
@@ -67,40 +69,42 @@ The application consists of four core activities:
 
 Artificial intelligence tools were used during the development of this application. Specifically:
 
-- **Microsoft Copilot** was used to assist with code suggestions, syntax guidance, and debugging support during development.
-- **OpenAI ChatGPT** was used to assist with structuring logic and troubleshooting activity navigation and intent data passing.
+- **Microsoft Copilot** (Microsoft, 2024) was used to assist with code suggestions, syntax guidance, and debugging support during development.
+- **OpenAI ChatGPT** (OpenAI, 2024) was used to assist with structuring logic and troubleshooting activity navigation and intent data passing.
 
-All AI-generated suggestions were reviewed, understood, and adapted before implementation. The use of these tools is disclosed in accordance with IIE academic integrity requirements.
+All AI-generated suggestions were reviewed, understood, and adapted by the student before implementation. The use of these tools is disclosed in accordance with IIE academic integrity requirements.
 
 ---
 
 ## References
 
-Android Developers. 2024. *Activity*. [Online]. Available at: https://developer.android.com/reference/android/app/Activity [Accessed 20 May 2026].
+Android Developers. 2024a. *Activity*. [Online]. Available at: https://developer.android.com/reference/android/app/Activity [Accessed 20 May 2026].
 
-Android Developers. 2024. *AppCompatActivity*. [Online]. Available at: https://developer.android.com/reference/androidx/appcompat/app/AppCompatActivity [Accessed 19 May 2026].
+Android Developers. 2024b. *AppCompatActivity*. [Online]. Available at: https://developer.android.com/reference/androidx/appcompat/app/AppCompatActivity [Accessed 20 May 2026].
 
-Android Developers. 2024. *Build flexible layouts with ConstraintLayout*. [Online]. Available at: https://developer.android.com/develop/ui/views/layout/constraint-layout [Accessed 19 May 2026].
+Android Developers. 2024c. *Build flexible layouts with ConstraintLayout*. [Online]. Available at: https://developer.android.com/develop/ui/views/layout/constraint-layout [Accessed 20 May 2026].
 
-Android Developers. 2024. *Get started with the Espresso testing framework*. [Online]. Available at: https://developer.android.com/training/testing/espresso [Accessed 19 May 2026].
+Android Developers. 2024d. *Get started with the Espresso testing framework*. [Online]. Available at: https://developer.android.com/training/testing/espresso [Accessed 20 May 2026].
 
-Android Developers. 2024. *Intents and intent filters*. [Online]. Available at: https://developer.android.com/guide/components/intents-filters [Accessed 19 May 2026].
+Android Developers. 2024e. *Intents and intent filters*. [Online]. Available at: https://developer.android.com/guide/components/intents-filters [Accessed 20 May 2026].
 
-Android Developers. 2024. *Material Design Components for Android*. [Online]. Available at: https://developer.android.com/develop/ui/views/theming/look-and-feel [Accessed 19 May 2026].
+Android Developers. 2024f. *Material Design Components for Android*. [Online]. Available at: https://developer.android.com/develop/ui/views/theming/look-and-feel [Accessed 20 May 2026].
 
-Android Developers. 2024. *WindowInsets and edge-to-edge display*. [Online]. Available at: https://developer.android.com/develop/ui/views/layout/edge-to-edge [Accessed 19 May 2026].
+Android Developers. 2024g. *WindowInsets and edge-to-edge display*. [Online]. Available at: https://developer.android.com/develop/ui/views/layout/edge-to-edge [Accessed 20 May 2026].
 
-Google. 2024. *androidx.core.ktx*. [Online]. Available at: https://developer.android.com/kotlin/ktx [Accessed 19 May 2026].
+Google. 2024. *androidx.core.ktx*. [Online]. Available at: https://developer.android.com/kotlin/ktx [Accessed 20 May 2026].
 
-JUnit. 2024. *JUnit 4*. [Online]. Available at: https://junit.org/junit4/ [Accessed 19 May 2026].
+JUnit. 2024. *JUnit 4*. [Online]. Available at: https://junit.org/junit4/ [Accessed 20 May 2026].
 
-JetBrains. 2024. *Data classes – Kotlin documentation*. [Online]. Available at: https://kotlinlang.org/docs/data-classes.html [Accessed 20 May 2026].
+JetBrains. 2024a. *Data classes – Kotlin documentation*. [Online]. Available at: https://kotlinlang.org/docs/data-classes.html [Accessed 20 May 2026].
 
-JetBrains. 2024. *Kotlin programming language*. [Online]. Available at: https://kotlinlang.org/ [Accessed 20 May 2026].
+JetBrains. 2024b. *Kotlin programming language*. [Online]. Available at: https://kotlinlang.org/ [Accessed 20 May 2026].
 
 Microsoft. 2024. *Microsoft Copilot*. [Online]. Available at: https://copilot.microsoft.com [Accessed 20 May 2026].
 
 OpenAI. 2024. *ChatGPT*. [Online]. Available at: https://chat.openai.com [Accessed 20 May 2026].
+[README (27).md](https://github.com/user-attachments/files/28073027/README.27.md)
+
 
 
 This project is a simple Android app made to test and display small “life hack” ideas. The app shows a list of statements (questions) and the user must decide if they are true or false. It is mainly built to practice basic Kotlin programming and app development.
