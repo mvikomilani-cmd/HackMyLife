@@ -16,7 +16,7 @@ HackMyLife is an Android quiz application built using Kotlin and Android Studio 
 
 Each screen in the application is implemented as an `Activity`, which serves as the entry point for user interaction in Android (Android Developers, 2024a). The application consists of four core activities:
 
-- **MainActivity** – Entry point of the app; displays a start button that launches the quiz. It extends `AppCompatActivity` to ensure backwards-compatible UI behaviour (Android Developers, 2024b).
+- **MainActivity** – Entry point of the app; displays a start button that launches the quiz. It extends `AppCompatActivity` to ensure backwards-compatible UI behaviour (Android Developers, 2024b), (GEMINI, 2024)
 - **QuizActivity** – Presents questions one at a time; captures user responses (Hack or Myth) and tracks score.
 - **ScoreActivity** – Displays the final score and feedback message; provides navigation to the review screen.
 - **ReviewActivity** – Displays a breakdown of each question, the user's answer, the correct answer, and the result.
@@ -104,6 +104,7 @@ Microsoft. 2024. *Microsoft Copilot*. [Online]. Available at: https://copilot.mi
 
 OpenAI. 2024. *ChatGPT*. [Online]. Available at: https://chat.openai.com [Accessed 20 May 2026].
 [README (27).md](https://github.com/user-attachments/files/28073027/README.27.md)
+
 
 
 
